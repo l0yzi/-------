@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 90: end of line expected.
+    jump rejection with dissolve
+                   ^
+
+Ren'Py Version: Ren'Py 8.2.0.24012702
+Mon May 27 21:39:00 2024

@@ -1,0 +1,70 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While processing text tag {/cps} in 'Старуха протянула мне лист, где написано, как к ней добраться{/cps}'.:
+  File "game/script.rpy", line 820, in script
+    "Старуха протянула мне лист, где написано, как к ней добраться{/cps}"
+Exception: '/cps' closes a text tag that isn't open.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 820, in script
+    "Старуха протянула мне лист, где написано, как к ней добраться{/cps}"
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\exports.py", line 1493, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\character.py", line 1391, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\character.py", line 1042, in do_display
+    display_say(who,
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\character.py", line 738, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\display\core.py", line 2814, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\display\core.py", line 1352, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\display\screen.py", line 754, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\display\layout.py", line 1361, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\text\text.py", line 2276, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\text\text.py", line 640, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "C:\Users\petr_\OneDrive\Рабочий стол\renpy-8.2.0-sdk\renpy\text\text.py", line 1148, in segment
+    raise Exception("%r closes a text tag that isn't open." % text)
+Exception: '/cps' closes a text tag that isn't open.
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.2.0.24012702
+ 
+Tue May 28 02:41:31 2024
